@@ -217,4 +217,18 @@ li{
     .img-desktop{
         display: none;
     }
+    .confirm-container, body{
+        background: var(--White);
+    }
+
+    .container-confirmation{
+        position: relative;
+    }
+
+    .button-2{
+        position: relative;
+        bottom: -200px;
+    }
+    .attribution { font-size: 11px; text-align: center; margin-top: 50px; color: rgb(21, 48, 255);}
+    .attribution a { color: hsl(229, 71%, 23%); }
 }
