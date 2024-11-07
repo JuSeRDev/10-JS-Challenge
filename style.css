@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font: "Roboto", serif;
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Tomato: hsl(4, 100%, 67%);
+    --Tomato-shadow: hsla(4, 100%, 67%, 0.523);
+
+    /* ### Neutral */
+
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: var(--font);
+    background: var(--Charcoal-Grey);
+}
+
+.general-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--White);
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.container-text{
+    max-width: 500px;
+    padding: 60px 60px 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title{
+    font-size: 50px;
+    color: var(--Dark-Slate-Grey);
+}
+
+.text{
+    margin: 20px 0;
+}
+
+.list{
+    list-style-type:none;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.email-label{
+    font-weight: 700;
+    font-size: 10px;
+    color: var(--Dark-Slate-Grey);
+}
+
+.email-div{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.error-email-text{
+    font-size: 10px;
+    color: var(--Tomato);
+    font-weight: 700;
+    display: none;
+}
+
+.input-email{
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--Grey);
+}
+
+.button{
+    padding: 22px;
+    border: none;
+    background: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background: linear-gradient(90deg, rgba(237,96,123,1) 17%, rgba(237,113,75,1) 100%);
+    box-shadow: 5px 15px 30px var(--Tomato-shadow);
+}
+
+.img-mobile{
+    display: none;
+}
+
+.confirm-container{
+    display: none;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
